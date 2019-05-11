@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie-edge">
+	<link rel="stylesheet" href="../Includes/Bootstrap4/CSS/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="../CSS/Inicio.css">
+	<script async="async" src="../Includes/jQuery/jquery-3.3.1.js"></script>
+	<script async="async" src="../JavaScripts/Controlador.js"></script>
+	<script async="async" src="../JavaScripts/ControladorGrafico.js"></script>
+	<title>Sistema Operativo Archivos</title>
+</head>
+
+<body class="body">
+	<h1 class='row justify-content-end'><input type='button' class='boton' value='Nuevo' id='crear'>
+		<input type='button' class='boton' value='Renombrar' id='renombrar'>
+		<input type='button' class='boton' value='Eliminar' id='eliminar'>
+		<input type='button' class='boton' value='Mover' id='mover'>
+		<input type='button' class='boton' value='Atras' id='atras'>
+	</h1>
+	<h2>
+		<form id="formMover" class="formulario">
+			<b>Seleccione la carpeta a la que desea mover el archivo seleccionado: </b><select id="carpetaAMover">
+
+			</select>
+			<br></br>
+			<button type="button" class='boton'id="moverArchivo">Mover</button>
+			<button type="button" class='boton'id="cancelarMover">Cancelar</button>
+		</form>
+		<form id="formRenombrar" class="formulario">
+			<b>Nuevo nombre del archivo seleccionado:</b> <input type='text' id='nuevoNombreArchivo'><br></br>
+			<button type="button" class='boton'id="renombrarArchivo">Renombrar</button>
+			<button type="button" class='boton'id="cancelarRenombrar">Cancelar</button>
+		</form>
+		<form id='formCreacion' class="formulario">
+			<b>Nombre del archivo:</b> <input type='text' id='nombreArchivo'><br></br>
+			<b>Tipo:</b><select id='tipoArchivo'>
+				<option value='Carpeta'>Carpeta</option>
+				<option value='HojaCalculo'>Hoja de calculo</option>
+				<option value='Imagen'>Imagen</option>
+				<option value='Documento'>Archivo de texto</option>
+			</select>
+			<br></br>
+			<button type="button" class='boton'id="enviarDatos">Crear</button>
+			<button type="button" class='boton'id="cancelarCrear">Cancelar</button>
+		</form>
+	</h2>
+	<div id="contenedor">
+
+	</div>
+</body>
+
+</html>

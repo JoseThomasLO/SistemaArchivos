@@ -1,0 +1,37 @@
+.body
+{
+    background-image: url("../../Imagenes/FondoEscritorio.jpg");
+}
+
+.archivo
+{
+    margin: 1vw;
+}
+
+.nombre
+{
+    text-align: center;
+    color: white;
+}
+
+.boton
+{
+    border-radius: 14px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    background: #3498db;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin:10px;
+   
+}
+
+.formulario
+{
+    padding:5px;
+    border:2px solid #3498db;
+    background:#F0F8FF;
+    border-radius:15px;
+    display: none;
+}
